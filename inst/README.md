@@ -12,7 +12,7 @@ Now, go and have some fun.<br/>
 # malign
 Positive encouragement is nifty, but have ya tried _negative encouragement_?
 
-[![Linux Build Status](https://travis-ci.org/gaborcsardi/praise.svg?branch=master)](https://travis-ci.org/josephwb/malign)
+[![Linux Build Status](https://travis-ci.com/josephwb/praise.svg?branch=master)](https://travis-ci.com/josephwb/malign)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/github/josephwb/malign?svg=true)](https://ci.appveyor.com/project/josephwb/malign)
 
 
@@ -39,7 +39,7 @@ malign();
 ```
 
 ```
-#> [1] "You are gullible!"
+#> [1] "You are distressing!"
 ```
 
 You can supply a template, and `malign()` fills in random words of the specified
@@ -51,7 +51,7 @@ malign("${EXCLAMATION}! You have done this ${adverb_manner}!");
 ```
 
 ```
-#> [1] "BAISE MOI! You have done this unhappily!"
+#> [1] "PHOOEY! You have done this awfully!"
 ```
 
 Is 'malign' too _hoity-toity_ for you? Try some other commands (note: harshness
@@ -63,7 +63,7 @@ insult("${EXCLAMATION}! That was quite ${adjective}!");
 ```
 
 ```
-#> [1] "WHOOP-DE-FUCKING-DOO! That was quite mind-numbing!"
+#> [1] "DANG! That was quite forgettable!"
 ```
 
 or:
@@ -74,7 +74,7 @@ dis("${EXCLAMATION}!!! That was certainly a ${result}!");
 ```
 
 ```
-#> [1] "BWAH-HAH-HAH!!! That was certainly a howler!"
+#> [1] "DANG!!! That was certainly a rubbish dump!"
 ```
 
 or:
@@ -85,7 +85,7 @@ zing("${EXCLAMATION}! That code executed quite ${adverb_manner}!");
 ```
 
 ```
-#> [1] "BLECH! That code executed quite blindly!"
+#> [1] "GEE-WHIZ! That code executed quite obnoxiously!"
 ```
 
 or:
@@ -96,7 +96,7 @@ snark("${EXCLAMATION}! Your coding ability is just ${adjective}!");
 ```
 
 ```
-#> [1] "CRAP! Your coding ability is just unimportant!"
+#> [1] "JESUS! Your coding ability is just boastful!"
 ```
 
 Note that capitalization in the inserted words will be the same as in the template:
@@ -107,7 +107,7 @@ malign("${Exclamation}! ${EXCLAMATION}! ${Exclamation}! This is just ${adjective
 ```
 
 ```
-#> [1] "Gaaaaaaaaaaaah! JEEZ! Gross! This is just disturbing!"
+#> [1] "Neener-neener! GOSH! Baise moi! This is just run-of-the-mill!"
 ```
 
 Currently supported parts of speech:
