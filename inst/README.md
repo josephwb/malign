@@ -12,7 +12,7 @@ Now, go and have some fun.<br/>
 # malign
 Positive encouragement is nifty, but have ya tried _negative encouragement_?
 
-[![Linux Build Status](https://travis-ci.com/josephwb/praise.svg?branch=master)](https://travis-ci.com/josephwb/malign)
+[![Linux Build Status](https://travis-ci.com/josephwb/malign.svg?branch=master)](https://travis-ci.com/josephwb/malign)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/github/josephwb/malign?svg=true)](https://ci.appveyor.com/project/josephwb/malign)
 
 
