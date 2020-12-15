@@ -9,8 +9,8 @@ Named list of character vectors. List entries: \describe{
   \item{adjective}{Words and phrases to be used as negative adjectives.}
   \item{adverb}{Adverbs.}
   \item{adverb_manner}{Adverbs of manner, with negative meanings.}
-  \item{created}{Synonyms of \sQuote{create} in paste tense.}
-  \item{creating}{Synonyms of \sQuote{create}, in present participle form.}
+  \item{created}{Negative synonyms of \sQuote{create} in paste tense.}
+  \item{creating}{Negative synonyms of \sQuote{create}, in present participle form.}
   \item{exclamation}{Negative exclamations.}
   \item{rpackage}{Synonyms for the term \sQuote{R package}.}
   \item{result}{Words and phrases used to connote negative results.}
