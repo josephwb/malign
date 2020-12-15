@@ -1,0 +1,28 @@
+Package: malign
+Title: Positive encouragement is nifty, but have ya tried negative encouragement?
+Version: 0.2020
+Authors@R: 
+    person(given = "Joseph",
+           family = "Brown",
+           role = c("aut", "cre"),
+           email = "phylo.jwb@gmail.com",
+           comment = c(ORCID = "0000-0002-3835-8062"))
+Description: Everyone needs to be taken down a peg once in a while, especially
+    oneself! Forked from the complementary (and complimentary!) package praise,
+    malign provides ready-made insults for use when code does run not as expected.
+    Useful for troubleshooting code, or just to make oneself feel worse.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    testthat
+Collate:
+    'adjective.R'
+    'adverb.R'
+    'exclamation.R'
+    'noun.R'
+    'verb.R'
+    'smiley.R'
+    'rpackage.R'
+    'package.R'
+RoxygenNote: 7.1.1

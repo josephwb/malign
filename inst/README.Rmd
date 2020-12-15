@@ -1,0 +1,92 @@
+
+```{r, setup, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  tidy = FALSE,
+  error = FALSE,
+  fig.width = 8,
+  fig.height = 8);
+```
+
+<div style="background-color:rgba(233, 122, 114, 1); middle; padding:10px 10px;">
+<b>DISCLAIMER:</b> This package is meant for humour purposes, in the grand tradition
+of self-deprecation. To be clear: being mean is <u><i>not</i></u> cool, kids. Please do
+not use this package to be toxic to others. Also, take care of yourself.<br/><br/>
+Now, go and have some fun.<br/>
+- Jay Dubs
+</div>
+
+# malign
+Positive encouragement is nifty, but have ya tried _negative encouragement_?
+
+[![Linux Build Status](https://travis-ci.org/gaborcsardi/praise.svg?branch=master)](https://travis-ci.org/josephwb/malign)
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/github/josephwb/malign?svg=true)](https://ci.appveyor.com/project/josephwb/malign)
+
+
+
+## Overview
+Everyone needs to be taken down a peg once in a while, especially oneself! Forked
+from the complementary (_and_ complimentary!) package [praise](https://github.com/rladies/praise), malign provides
+ready-made insults for use when code does not run as expected. Useful for
+troubleshooting code, or just to make oneself feel bad.
+
+## Installation
+
+```{r, install, eval=FALSE}
+devtools::install_github("josephwb/malign");
+```
+
+## Usage
+
+```{r, usage}
+library(malign);
+malign();
+```
+
+You can supply a template, and `malign()` fills in random words of the specified
+part of speech:
+
+```{r malign example}
+malign("${EXCLAMATION}! You have done this ${adverb_manner}!");
+```
+
+Is 'malign' too _hoity-toity_ for you? Try some other commands (note: harshness
+does not differ across commands):
+
+```{r insult example}
+insult("${EXCLAMATION}! That was quite ${adjective}!");
+```
+
+or:
+
+```{r dis example}
+dis("${EXCLAMATION}!!! That was certainly a ${result}!");
+```
+
+or:
+
+```{r zing example}
+zing("${EXCLAMATION}! That code executed quite ${adverb_manner}!");
+```
+
+or:
+
+```{r snark example}
+snark("${EXCLAMATION}! Your coding ability is just ${adjective}!");
+```
+
+Note that capitalization in the inserted words will be the same as in the template:
+
+```{r capitalization}
+malign("${Exclamation}! ${EXCLAMATION}! ${Exclamation}! This is just ${adjective}!");
+```
+
+Currently supported parts of speech:
+
+```{r parts}
+names(malign_parts);
+```
+
+## License
+
+MIT © [Joseph W. Brown](https://github.com/josephwb)
