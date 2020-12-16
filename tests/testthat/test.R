@@ -2,7 +2,7 @@
 context("parts");
 
 test_that("all parts are lowercase (except some)", {
-  lower <- setdiff(names(malign_parts), "smiley");
+  lower <- setdiff(names(malign_parts), "frowny");
   for (p in lower) {
     pp <- setdiff(malign_parts[[p]], "R package");
     expect_true(all(is_all_lowercase(pp)), info=p);

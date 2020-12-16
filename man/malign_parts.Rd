@@ -14,6 +14,7 @@ Named list of character vectors. List entries: \describe{
   \item{exclamation}{Negative exclamations.}
   \item{rpackage}{Synonyms for the term \sQuote{R package}.}
   \item{result}{Words and phrases used to connote negative results.}
+  \item{frowny}{Negative emoticons.}
 }
 }
 \usage{

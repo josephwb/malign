@@ -20,8 +20,9 @@ NULL
 ##'   \item{exclamation}{Negative exclamations.}
 ##'   \item{rpackage}{Synonyms for the term \sQuote{R package}.}
 ##'   \item{result}{Words and phrases used to connote negative results.}
+##'   \item{frowny}{Negative emoticons.}
 ##' }
-##' @include adjective.R adverb.R exclamation.R rpackage.R smiley.R verb.R
+##' @include adjective.R adverb.R exclamation.R rpackage.R frowny.R verb.R
 ##' @export
 malign_parts <- list(
   adjective = adjective,
@@ -31,7 +32,7 @@ malign_parts <- list(
   creating = creating,
   exclamation = exclamation,
   rpackage = rpackage,
-  smiley = smiley,
+  frowny = frowny,
   result = result
 )
 

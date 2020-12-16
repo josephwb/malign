@@ -20,9 +20,9 @@ Collate:
     'adjective.R'
     'adverb.R'
     'exclamation.R'
+    'frowny.R'
     'noun.R'
     'verb.R'
-    'smiley.R'
     'rpackage.R'
     'package.R'
 RoxygenNote: 7.1.1
