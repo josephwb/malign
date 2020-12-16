@@ -39,7 +39,7 @@ malign();
 ```
 
 ```
-#> [1] "You are disagreeable!"
+#> [1] "You are upsetting!"
 ```
 
 You can supply a template, and `malign()` fills in random words of the specified
@@ -51,7 +51,7 @@ malign("${EXCLAMATION}! You have done this ${adverb_manner}!");
 ```
 
 ```
-#> [1] "NUTS! You have done this foolishly!"
+#> [1] "EGADS! You have done this laboriously!"
 ```
 
 Is 'malign' too _hoity-toity_ for you? Try some other commands (note: harshness
@@ -63,7 +63,7 @@ insult("${EXCLAMATION}! That was quite ${adjective}!");
 ```
 
 ```
-#> [1] "YEESH! That was quite poorly-made!"
+#> [1] "SHOO! That was quite repellent!"
 ```
 
 or:
@@ -74,7 +74,7 @@ dis("${EXCLAMATION}!!! That was certainly a ${result}!");
 ```
 
 ```
-#> [1] "EW!!! That was certainly a catastrophe!"
+#> [1] "TABARNAK!!! That was certainly a monumental failure!"
 ```
 
 or:
@@ -85,7 +85,7 @@ zing("${EXCLAMATION}! That code executed quite ${adverb_manner}!");
 ```
 
 ```
-#> [1] "WTF! That code executed quite shabbily!"
+#> [1] "WTF! That code executed quite doubtfully!"
 ```
 
 or:
@@ -96,7 +96,7 @@ snark("${EXCLAMATION}! Your coding ability is just ${adjective}!");
 ```
 
 ```
-#> [1] "BULLSHIT! Your coding ability is just bungling!"
+#> [1] "PSHAW! Your coding ability is just withering!"
 ```
 
 Note that capitalization in the inserted words will be the same as in the template:
@@ -107,7 +107,7 @@ malign("${Exclamation}! ${EXCLAMATION}! ${Exclamation}! This is just ${adjective
 ```
 
 ```
-#> [1] "Fuck! OOH! Ugh! This is just inferior!"
+#> [1] "Blah! GAH! Christ! This is just obstinate!"
 ```
 
 Currently supported parts of speech:
@@ -119,7 +119,7 @@ names(malign_parts);
 
 ```
 #> [1] "adjective"     "adverb"        "adverb_manner" "created"      
-#> [5] "creating"      "exclamation"   "rpackage"      "smiley"       
+#> [5] "creating"      "exclamation"   "rpackage"      "frowny"       
 #> [9] "result"
 ```
 
