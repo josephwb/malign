@@ -39,11 +39,24 @@ malign();
 ```
 
 ```
-#> [1] "You are upsetting!"
+#> [1] "You are vain!"
 ```
 
-You can supply a template, and `malign()` fills in random words of the specified
-part of speech:
+`malign()` currently supports the following parts of speech:
+
+
+```r
+names(malign_parts);
+```
+
+```
+#> [1] "adjective"     "adverb"        "adverb_manner" "created"      
+#> [5] "creating"      "exclamation"   "rpackage"      "frowny"       
+#> [9] "result"
+```
+
+You can pass a template specifying these supported parts of speech, and
+`malign()` fills in random words of the matching type:
 
 
 ```r
@@ -51,7 +64,18 @@ malign("${EXCLAMATION}! You have done this ${adverb_manner}!");
 ```
 
 ```
-#> [1] "EGADS! You have done this laboriously!"
+#> [1] "WHOOP-DE-FUCKING-DOO! You have done this rashly!"
+```
+
+Prefer your jabs to be in emoticon form? No problem:
+
+
+```r
+malign("${frowny}");
+```
+
+```
+#> [1] ">:("
 ```
 
 Is 'malign' too _hoity-toity_ for you? Try some other commands (note: harshness
@@ -63,7 +87,7 @@ insult("${EXCLAMATION}! That was quite ${adjective}!");
 ```
 
 ```
-#> [1] "SHOO! That was quite repellent!"
+#> [1] "OOH! That was quite obnoxious!"
 ```
 
 or:
@@ -74,7 +98,7 @@ dis("${EXCLAMATION}!!! That was certainly a ${result}!");
 ```
 
 ```
-#> [1] "TABARNAK!!! That was certainly a monumental failure!"
+#> [1] "BOO!!! That was certainly a misfiring!"
 ```
 
 or:
@@ -85,7 +109,7 @@ zing("${EXCLAMATION}! That code executed quite ${adverb_manner}!");
 ```
 
 ```
-#> [1] "WTF! That code executed quite doubtfully!"
+#> [1] "EW! That code executed quite anxiously!"
 ```
 
 or:
@@ -96,7 +120,7 @@ snark("${EXCLAMATION}! Your coding ability is just ${adjective}!");
 ```
 
 ```
-#> [1] "PSHAW! Your coding ability is just withering!"
+#> [1] "UGH! Your coding ability is just confused!"
 ```
 
 Note that capitalization in the inserted words will be the same as in the template:
@@ -107,20 +131,7 @@ malign("${Exclamation}! ${EXCLAMATION}! ${Exclamation}! This is just ${adjective
 ```
 
 ```
-#> [1] "Blah! GAH! Christ! This is just obstinate!"
-```
-
-Currently supported parts of speech:
-
-
-```r
-names(malign_parts);
-```
-
-```
-#> [1] "adjective"     "adverb"        "adverb_manner" "created"      
-#> [5] "creating"      "exclamation"   "rpackage"      "frowny"       
-#> [9] "result"
+#> [1] "Pfft! WOOPSIE! Bullshit! This is just bungling!"
 ```
 
 ## License

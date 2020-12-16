@@ -43,11 +43,23 @@ library(malign);
 malign();
 ```
 
-You can supply a template, and `malign()` fills in random words of the specified
-part of speech:
+`malign()` currently supports the following parts of speech:
+
+```{r parts}
+names(malign_parts);
+```
+
+You can pass a template specifying these supported parts of speech, and
+`malign()` fills in random words of the matching type:
 
 ```{r malign example}
 malign("${EXCLAMATION}! You have done this ${adverb_manner}!");
+```
+
+Prefer your jabs to be in emoticon form? No problem:
+
+```{r emoticon example}
+malign("${frowny}");
 ```
 
 Is 'malign' too _hoity-toity_ for you? Try some other commands (note: harshness
@@ -79,12 +91,6 @@ Note that capitalization in the inserted words will be the same as in the templa
 
 ```{r capitalization}
 malign("${Exclamation}! ${EXCLAMATION}! ${Exclamation}! This is just ${adjective}!");
-```
-
-Currently supported parts of speech:
-
-```{r parts}
-names(malign_parts);
 ```
 
 ## License
