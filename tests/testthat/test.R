@@ -56,6 +56,10 @@ test_that("template with a single part", {
     "That was certainly a ${result}!",
     "^That was certainly a (?<result1>.*)!$"
   );
+  malign_check(
+    "${frowny}!",
+    "^(?<frowny1>.*)!$"
+  );
 })
 
 test_that("templates with multiple parts of the same type", {
