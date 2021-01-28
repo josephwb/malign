@@ -24,9 +24,21 @@ re_match <- function(pattern, x) {
   }
 }
 
-malign_check <- function(template, regexp, num=13) {
+# `func' arg allows testing of malign aliases. is_hacky(this) = TRUE
+malign_check <- function(template, regexp, num=13, func="malign") {
   for (i in 1:num) {
-    mal <- malign(template);
+    mal <- "";
+    if (func == "malign") {
+      mal <- malign(template);
+    } else if (func == "insult") {
+      mal <- dis(template);
+    } else if (func == "dis") {
+      mal <- dis(template);
+    } else if (func == "snark") {
+      mal <- dis(template);
+    } else if (func == "zing") {
+      mal <- dis(template);
+    }
     match <- re_match(regexp, mal);
     expect_true(!is.null(match), info=template);
 

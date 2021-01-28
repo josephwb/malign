@@ -159,3 +159,37 @@ test_that("whole word is upper case", {
     expect_true(is_all_uppercase(mal));
   }
 })
+
+context("Aliases");
+
+test_that("different part types in the same template", {
+  malign_check(
+    "You did this ${adverb_manner} and it got ${adjective}!",
+    "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",
+    func="insult"
+  );
+})
+
+test_that("different part types in the same template", {
+  malign_check(
+    "You did this ${adverb_manner} and it got ${adjective}!",
+    "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",
+    func="dis"
+  );
+})
+
+test_that("different part types in the same template", {
+  malign_check(
+    "You did this ${adverb_manner} and it got ${adjective}!",
+    "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",
+    func="snark"
+  );
+})
+
+test_that("different part types in the same template", {
+  malign_check(
+    "You did this ${adverb_manner} and it got ${adjective}!",
+    "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",
+    func="zing"
+  );
+})
