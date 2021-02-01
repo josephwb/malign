@@ -13,3 +13,6 @@ warnings_are_errors: true
 # use --as-cran for more draconian checks
 r_check_args: --run-dontrun
 cache: packages
+
+after_success:
+    - Rscript -e 'covr::codecov()'

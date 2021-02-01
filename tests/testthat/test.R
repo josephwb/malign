@@ -168,25 +168,16 @@ test_that("different part types in the same template", {
     "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",
     func="insult"
   );
-})
-
-test_that("different part types in the same template", {
   malign_check(
     "You did this ${adverb_manner} and it got ${adjective}!",
     "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",
     func="dis"
   );
-})
-
-test_that("different part types in the same template", {
   malign_check(
     "You did this ${adverb_manner} and it got ${adjective}!",
     "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",
     func="snark"
   );
-})
-
-test_that("different part types in the same template", {
   malign_check(
     "You did this ${adverb_manner} and it got ${adjective}!",
     "^You did this (?<adverb_manner>.*) and it got (?<adjective>.*)!$",

@@ -15,7 +15,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests:
-    testthat
+    testthat,
+    covr
 Collate:
     'adjective.R'
     'adverb.R'

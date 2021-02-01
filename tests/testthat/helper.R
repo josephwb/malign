@@ -31,13 +31,13 @@ malign_check <- function(template, regexp, num=13, func="malign") {
     if (func == "malign") {
       mal <- malign(template);
     } else if (func == "insult") {
-      mal <- dis(template);
+      mal <- insult(template);
     } else if (func == "dis") {
       mal <- dis(template);
     } else if (func == "snark") {
-      mal <- dis(template);
+      mal <- snark(template);
     } else if (func == "zing") {
-      mal <- dis(template);
+      mal <- zing(template);
     }
     match <- re_match(regexp, mal);
     expect_true(!is.null(match), info=template);
