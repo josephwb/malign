@@ -55,7 +55,7 @@ malign <- function(template = "You are ${adjective}!") {
   while (is_template(template)) {
     template <- replace_one_template(template);
   }
-  template
+  return(template);
 }
 
 template_pattern <- "\\$\\{([^\\}]+)\\}";
