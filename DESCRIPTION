@@ -1,5 +1,5 @@
 Package: malign
-Title: Positive encouragement is nifty, but have ya tried negative encouragement?
+Title: Positive Encouragement is Nifty, but Have Ya Tried Negative Encouragement?
 Version: 0.2020
 Authors@R: 
     person(given = "Joseph",
@@ -26,4 +26,4 @@ Collate:
     'verb.R'
     'rpackage.R'
     'package.R'
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
