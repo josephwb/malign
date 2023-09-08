@@ -1,5 +1,6 @@
 Package: malign
-Title: Positive Encouragement is Nifty, but Have Ya Tried Negative Encouragement?
+Title: Positive Encouragement is Nifty, but Have Ya Tried Negative
+        Encouragement?
 Version: 0.2020
 Authors@R: 
     person(given = "Joseph",
@@ -13,17 +14,11 @@ Description: Everyone needs to be taken down a peg once in a while, especially
     Useful for troubleshooting code, or just to make oneself feel worse.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
-Suggests:
-    testthat,
-    covr
-Collate:
-    'adjective.R'
-    'adverb.R'
-    'exclamation.R'
-    'frowny.R'
-    'noun.R'
-    'verb.R'
-    'rpackage.R'
-    'package.R'
+Suggests: testthat, covr
+Collate: 'adjective.R' 'adverb.R' 'exclamation.R' 'frowny.R' 'noun.R'
+        'verb.R' 'rpackage.R' 'package.R'
 RoxygenNote: 7.2.3
+NeedsCompilation: no
+Packaged: 2023-09-08 23:31:15 UTC; josephwb
+Author: Joseph Brown [aut, cre] (<https://orcid.org/0000-0002-3835-8062>)
+Maintainer: Joseph Brown <phylo.jwb@gmail.com>
