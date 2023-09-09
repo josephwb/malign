@@ -1,3 +1,6 @@
+---
+output: github_document
+---
 
 ```{r, setup, echo = FALSE, message = FALSE}
 knitr::opts_chunk$set(
@@ -20,6 +23,7 @@ Now, go and have some fun.<br/>
 Positive encouragement is nifty, but have ya tried _negative encouragement_?
 
 [![Linux Build Status](https://travis-ci.com/josephwb/malign.svg?branch=master)](https://travis-ci.com/josephwb/malign)
+[![R build status](https://github.com/josephwb/malign/workflows/R-CMD-check/badge.svg)](https://github.com/josephwb/malign/actions)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/github/josephwb/malign?svg=true)](https://ci.appveyor.com/project/josephwb/malign)
 [![Codecov test coverage](https://codecov.io/gh/josephwb/malign/branch/master/graph/badge.svg)](https://app.codecov.io/gh/josephwb/malign?branch=master)
 
