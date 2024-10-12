@@ -34,7 +34,7 @@ troubleshooting code, or just to make oneself feel bad.
 ## Installation
 
 ``` r
-devtools::install_github("josephwb/malign");
+remotes::install_github("josephwb/malign");
 ```
 
 ## Usage
