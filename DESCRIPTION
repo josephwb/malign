@@ -17,7 +17,7 @@ Encoding: UTF-8
 Suggests: testthat, covr
 Collate: 'adjective.R' 'adverb.R' 'exclamation.R' 'frowny.R' 'noun.R'
         'verb.R' 'rpackage.R' 'package.R'
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 NeedsCompilation: no
 Packaged: 2023-09-08 23:31:15 UTC; josephwb
 Author: Joseph Brown [aut, cre] (<https://orcid.org/0000-0002-3835-8062>)

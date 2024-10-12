@@ -42,3 +42,7 @@ malign("${Exclamation}! This ${rpackage} is ${adjective}!")
 ## All upper case
 malign("${EXCLAMATION}! You have done this ${adverb_manner}!")
 }
+\author{
+\strong{Maintainer}: Joseph Brown \email{phylo.jwb@gmail.com} (\href{https://orcid.org/0000-0002-3835-8062}{ORCID})
+
+}

@@ -38,7 +38,7 @@ troubleshooting code, or just to make oneself feel bad.
 ## Installation
 
 ```{r, install, eval=FALSE}
-devtools::install_github("josephwb/malign");
+remotes::install_github("josephwb/malign");
 ```
 
 ## Usage
